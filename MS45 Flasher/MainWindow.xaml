@@ -1,0 +1,43 @@
+﻿<Window x:Class="MS45_Flasher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MS45_Flasher"
+        mc:Ignorable="d"
+        Height="365" Width="580" MinHeight="365" MinWidth="580"
+        Title="{x:Static local:Global.Title}"
+        >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Margin="23,20,232,116">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="DME Information:" VerticalAlignment="Top"/>
+            <Label Content="DME Type" Margin="0,21,138,130"/>
+            <Label Content="HW Reference" Margin="0,47,138,104"/>
+            <Label Content="SW Reference" Margin="0,73,138,78"/>
+            <Label Content="Program Status" Margin="0,99,138,52"/>
+            <Label Content="VIN" Margin="0,125,138,26"/>
+            <Label x:Name="diagProtocol_Label" Content="Diag. Protocol" Margin="0,151,138,0"/>
+            <Label x:Name="DMEType_Box" Content="" Margin="107,21,0,130"/>
+            <Label x:Name="HWRef_Box" Content="" Margin="107,47,0,104"/>
+            <Label x:Name="SWRef_Box" Content="" Margin="107,73,0,78"/>
+            <Label x:Name="programStatus_Box" Content="" Margin="107,99,0,52"/>
+            <Label x:Name="VIN_Box" Content="" Margin="107,125,0,26"/>
+            <Label x:Name="diagProtocol_Box" Content="" Margin="107,151,0,0"/>
+        </Grid>
+        <ProgressBar x:Name="ProgressDME" Margin="24,0,24,24" IsEnabled="False" Minimum="0" Maximum="100" Value="0" Height="36" ValueChanged="ProgressDME_ValueChanged" VerticalAlignment="Bottom"/>
+        <StackPanel Margin="0,20,21,89" HorizontalAlignment="Right" Width="197">
+            <Button x:Name="IdentifyDME" Content="Identify DME" Height="27" Click="IdentifyDME_Click"/>
+            <Button x:Name="LoadSGBD" Content="Load SGBD (.PRG)" Height="27" Click="LoadSGBD_Click"/>
+            <Button x:Name="ReadTune" Content="Read DME" Height="27" Click="ReadTune_Click" IsEnabled="False"/>
+            <Button x:Name="LoadFile" Content="Load File" Height="27" Click="LoadFile_Click" IsEnabled="False"/>
+            <Button x:Name="LoadFile2" Content="Load File 2 (MPC Flash)" Height="27" Click="LoadFile2_Click" IsEnabled="False"/>
+            <Button x:Name="FlashProgram" Content="Flash Program" Height="27" IsEnabled="False" Click="FlashProgram_Click"/>
+            <Button x:Name="FlashDME" Content="Flash Tune" Height="27" Click="FlashData_Click" IsEnabled="False"/>
+        </StackPanel>
+        <CheckBox x:Name="FullBin_CheckBox" Content="Full Binary" Margin="0,0,0,69" Click="FullBin_CheckBox_Changed" IsEnabled="False" HorizontalAlignment="Right" Width="103" Height="15" VerticalAlignment="Bottom"/>
+        <TextBlock x:Name="statusTextBlock" Text="" HorizontalAlignment="Left" Margin="23,0,0,70" VerticalAlignment="Bottom" Width="353" />
+    </Grid>
+</Window>
