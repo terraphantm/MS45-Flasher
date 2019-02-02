@@ -55,7 +55,7 @@ If the program version you flashed is different than what was on there before, y
 
 ## License
 
-This project is licensed under The GNU General Public License v3.0 - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under The GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details
 
 ## Disclaimer: 
 This program is inherently invasive, and can render your DME unbootable and your car undriveable. Care must be taken when using this application. In no respect shall the authors or contributors incur any liability for any damages, including, but limited to, direct, indirect, special, or consequential damages arising out of, resulting from, or any way connected to the use of the application, whether or not based upon warranty, contract, tort, or otherwise; whether or not injury was sustained by persons or property or otherwise; and whether or not loss was sustained from, or arose out of, the results of, the item, or any services that may be provided by the authors and contributors.
