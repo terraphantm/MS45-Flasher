@@ -3,6 +3,10 @@ Tool to read and flash the MS45 DME. Can read/write full and partial binaries fr
 
 
 ### Prerequisites
+This application uses .Net Framework 4.5.2
+
+Any INPA-compatible OBDII cable should work with this application. Make sure your cable latency is set to 1ms
+
 You will need EdiabasLib.dll to compile and run this application.
 The application assumes you have an ediabas installation in the default directory along with E46, E60, E65, E83, or E85 daten files.
 If you don't have / want Ediabas installed, you will need to find a copy of MS450DS0.prg or 10MDS45.prg, and set the .config file to reflect the directory and filename of those files.
