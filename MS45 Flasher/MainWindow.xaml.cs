@@ -253,8 +253,11 @@ namespace MS45_Flasher
                         }
                     }
 
-                    FlashDME.IsEnabled = true;
-                    FlashProgram.IsEnabled = true;
+                    if (Global.openedMPC != null)
+                    {
+                        FlashDME.IsEnabled = true;
+                        FlashProgram.IsEnabled = true;
+                    }
                 }
 
             }

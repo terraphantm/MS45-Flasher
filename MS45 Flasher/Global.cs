@@ -17,8 +17,8 @@ namespace MS45_Flasher
         public static string ecuPath = ConfigurationManager.AppSettings["ecuPath"];
         public static string Port = ConfigurationManager.AppSettings["Port"];
         //I'd also like to add the ability to use a bluetooth interface
-        public static byte[] openedFlash;
-        public static byte[] openedMPC;
+        public static byte[] openedFlash = null;
+        public static byte[] openedMPC = null;
 
         private static string SetTitle()
         {
