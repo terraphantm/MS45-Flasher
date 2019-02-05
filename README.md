@@ -58,7 +58,7 @@ If the program version you flashed is different than what was on there before, y
 ## Acknowledgments
 
 * Hassmaschine has been a tremendous help in disassembling the DME and understanding the how the code generally works. I likely never would have done much with the MS45 without his help
-* See also the list of [contributors](https://github.com/MS45-Flasher/contributors) who participated / will participate in this project.
+* See also the list of [contributors](https://github.com/terraphantm/MS45-Flasher/contributors) who participated / will participate in this project.
 
 
 If this application has been useful for you and you would like to go a bit further with tuning, please consider checking out [bimmerlabs](https://www.bimmerlabs.com). The site is still growing, but our goal is to allow full control of most BMW DMEs. 
