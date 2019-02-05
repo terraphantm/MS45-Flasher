@@ -1,4 +1,4 @@
-# MS45-Flasher
+# MS45 Flasher
 Tool to read and flash the MS45 DME. Can read/write full and partial binaries from the MS45.0 and MS45.1. It will automatically correct checksums and sign files that are flashed to the DME.
 
 
@@ -51,11 +51,17 @@ To flash a full binary:
 If the program version you flashed is different than what was on there before, you will also have to flash a tune. You can simply click "Flash Tune" to use the one embedded within the full file, or you can uncheck the checkbox and load an appropriate tune of your choice. 
 
 
-
 ## Built using
 
 * [EdiabasLib](https://github.com/uholeschak/ediabaslib) - Used to communicate with the DME
-* See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## Acknowledgments
+
+* Hassmaschine has been a tremendous help in disassembling the DME and understanding the how the code generally works. I likely never would have done much with the MS45 without his help
+* See also the list of [contributors](https://github.com/your/project/contributors) who participated / will participate in this project.
+
+
+If this application has been useful for you and you would like to go a bit further with tuning, please consider checking out [bimmerlabs](https://www.bimmerlabs.com). The site is still growing, but our goal is to allow full control of most BMW DMEs. 
 
 ## License
 
